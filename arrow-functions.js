@@ -20,15 +20,24 @@ const square = (number) => {
 console.log(square(3));
 
 //challenge
-const squareArray = (array) => {
-  ret = [];
+// const squareArray = (array) => {
+//   ret = [];
 
-  for (var i = 0, len = array.length; i < len; i++) {
-    array[i] = array[i] ** 2;
-    ret.push(array[i]);
-  }
+//   for (var i = 0, len = array.length; i < len; i++) {
+//     array[i] = array[i] ** 2;
+//     ret.push(array[i]);
+//   }
 
-  return ret;
-};
+//   return ret;
+// };
 
-console.log(squareArray([1, 3, 5]));
+// console.log(squareArray([1, 3, 5]));
+
+//challenge using map
+numbers = [1, 2, 3, 4, 5];
+
+let squaredArray = numbers.map((number) => {
+  return number * number;
+});
+
+console.log(squaredArray);
